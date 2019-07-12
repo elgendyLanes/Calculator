@@ -69,7 +69,7 @@ hs_err_pid*
 .idea/**/dbnavigator.xml
 
 # Gradle
-.gradle/
+#.gradle/
 build/
 .idea/**/gradle.xml
 .idea/**/libraries
@@ -110,3 +110,4 @@ fabric.properties
 
 # Editor-based Rest Client
 .idea/httpRequests
+!/gradle/wrapper/gradle-wrapper.jar
