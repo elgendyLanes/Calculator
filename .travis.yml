@@ -13,14 +13,13 @@ stages:
   - build
   - test
 
-# define what build stage will do
-build:
-  stage: build
-  sccript:
-    - ./gradlew clean assemble
-
-# define what test stage will do
-unit_test:
-  stage: test
-  sccript:
-    - ./gradlew test
+jobs:
+  include:
+    #define what build stage will do
+    - stage: build
+      sccript:
+        - ./gradlew clean assemble
+    #define what test stage will do
+    - stage: test
+      script:
+        - ./gradlew test
