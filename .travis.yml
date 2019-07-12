@@ -8,6 +8,19 @@ jdk:
 before_install:
   - chmod +x gradlew
 
-sccript:
-  - ./gradlew clean assemble
-  - ./gradlew test
+# define all stages
+stages:
+  - build
+  - test
+
+# define what build stage will do
+build:
+  stage: build
+  sccript:
+    - ./gradlew clean assemble
+
+# define what test stage will do
+unit_test:
+  stage: test
+  sccript:
+    - ./gradlew test
