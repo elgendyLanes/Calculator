@@ -69,7 +69,7 @@ hs_err_pid*
 .idea/**/dbnavigator.xml
 
 # Gradle
-.gradle/
+#.gradle/
 build/
 .idea/**/gradle.xml
 .idea/**/libraries
