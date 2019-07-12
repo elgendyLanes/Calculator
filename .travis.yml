@@ -22,21 +22,21 @@ jobs:
     -
     #define what to do in case of pull request
     - stage: pull_request
-      sccript:
-        - echo $NOGOMI-pull_request
+      script:
+        - echo NOGOMI -this is pull request build
         - ./gradlew clean assemble
         - ./gradlew test
         -
     #define what to do in case of merge to master
     - stage: master
-      sccript:
-        - echo $NOGOMI-Master
+      script:
+        - echo NOGOMI - this is master build
         - ./gradlew clean assemble
         - ./gradlew test
 
     #define what to do in case of release
     - stage: release
-      sccript:
+      script:
         - ./gradlew clean assemble
         - ./gradlew test
         - echo $DEPLOY
