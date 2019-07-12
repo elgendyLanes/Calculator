@@ -6,4 +6,5 @@ fun main(args: Array<String>) {
     val calculatorHelper = CalculatorHelper()
     println(calculatorHelper.add(2,5))
     println(calculatorHelper.multiply(2,5))
+    println(calculatorHelper.divide(200,5))
 }
