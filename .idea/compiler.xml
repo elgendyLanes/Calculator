@@ -7,8 +7,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="com.elgendy.tutorials.library.main" target="1.8" />
+      <module name="com.elgendy.tutorials.library.test" target="1.8" />
       <module name="com.elgnedy.tutorials.calculator.main" target="1.8" />
       <module name="com.elgnedy.tutorials.calculator.test" target="1.8" />
+      <module name="com.elgnedy.tutorials.library.main" target="1.8" />
+      <module name="com.elgnedy.tutorials.library.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
