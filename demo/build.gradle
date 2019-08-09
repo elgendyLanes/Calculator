@@ -12,7 +12,7 @@ dependencies {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-    compile project(':library')
+    compile project(':calculator')
 
 
     testImplementation 'junit:junit:4.12'
