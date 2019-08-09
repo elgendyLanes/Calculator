@@ -37,6 +37,7 @@ jobs:
     #define what to do in case of release
     - stage: release
       script:
-        - ./gradlew clean assemble
+        - echo NOGOMI - this is release build
+        - ./gradlew clean install
         - ./gradlew test
-        - echo $DEPLOY
+        - ./gradlew bintrayUpload
