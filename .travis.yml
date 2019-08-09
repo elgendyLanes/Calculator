@@ -19,11 +19,10 @@ stages:
 
 jobs:
   include:
-    -
     #define what to do in case of pull request
     - stage: pull_request
       script:
-        - echo NOGOMI -this is pull request build
+        - echo NOGOMI - this is pull request build
         - ./gradlew clean assemble
         - ./gradlew test
         -
